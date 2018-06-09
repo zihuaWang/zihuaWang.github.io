@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="最近想搞一个小程序，发现了一个框架wePY，说是和Vue十分类似，可我对Vue一窍不通，于是先来学习一下，做点笔记，以防以后忘记   Vue是什么 Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。专注于MVVM 模型的 ViewModel 层。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue学习笔记（一）">
+<meta property="og:url" content="http://yoursite.com/2018/06/09/Vue学习笔记（一）/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="最近想搞一个小程序，发现了一个框架wePY，说是和Vue十分类似，可我对Vue一窍不通，于是先来学习一下，做点笔记，以防以后忘记   Vue是什么 Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。专注于MVVM 模型的 ViewModel 层。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-06-09T08:10:16.691Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Vue学习笔记（一）">
+<meta name="twitter:description" content="最近想搞一个小程序，发现了一个框架wePY，说是和Vue十分类似，可我对Vue一窍不通，于是先来学习一下，做点笔记，以防以后忘记   Vue是什么 Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。专注于MVVM 模型的 ViewModel 层。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/09/Vue学习笔记（一）/"/>
 
 
 
 
 
-  <title>Hexo</title>
+  <title>Vue学习笔记（一） | Hexo</title>
   
 
 
@@ -140,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,9 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -246,9 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/09/Vue学习笔记（一）/" itemprop="url">Vue学习笔记（一）</a></h1>
+          <h1 class="post-title" itemprop="name headline">Vue学习笔记（一）</h1>
         
 
         <div class="post-meta">
@@ -298,9 +299,7 @@
       
 
       
-        
-          
-            <blockquote>
+        <blockquote>
 <ul>
 <li>最近想搞一个小程序，发现了一个框架wePY，说是和Vue十分类似，可我对Vue一窍不通，于是先来学习一下，做点笔记，以防以后忘记</li>
 </ul>
@@ -334,8 +333,6 @@
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><hr>
 <p>哇，真的和小程序好像近啊，简直一毛一样。说！腾讯你到底向Vue <del>抄袭</del> 借鉴了多少！惊了(^_^)/~~</p>
 
-          
-        
       
     </div>
     
@@ -352,12 +349,12 @@
       
 
       
+      
+      
 
       
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -367,10 +364,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -378,6 +376,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -398,8 +400,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -441,6 +452,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Vue是什么"><span class="nav-number">1.</span> <span class="nav-text">Vue是什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hello-Vue"><span class="nav-number">2.</span> <span class="nav-text">Hello Vue</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一条指令"><span class="nav-number">3.</span> <span class="nav-text">第一条指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#条件与循环"><span class="nav-number">4.</span> <span class="nav-text">条件与循环</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#条件"><span class="nav-number">4.1.</span> <span class="nav-text">条件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#循环"><span class="nav-number">4.2.</span> <span class="nav-text">循环</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -574,6 +601,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
